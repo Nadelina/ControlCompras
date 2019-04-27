@@ -1,0 +1,58 @@
+﻿@model ControlCompras.Models.DetalleFactura
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>DetalleFactura</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Factura.IdFactura)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Factura.IdFactura)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Producto.BarCode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Producto.BarCode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cantidad)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cantidad)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PrecioCompra)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PrecioCompra)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Total)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Total)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdDetalle }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

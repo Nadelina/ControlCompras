@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ControlCompras", "ControlCompras\ControlCompras.csproj", "{CDBD1784-F845-4D2B-94AA-60C0F781C2BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDBD1784-F845-4D2B-94AA-60C0F781C2BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDBD1784-F845-4D2B-94AA-60C0F781C2BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDBD1784-F845-4D2B-94AA-60C0F781C2BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDBD1784-F845-4D2B-94AA-60C0F781C2BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58D73933-C3F3-485E-8FFB-34EB7A55B8FE}
+	EndGlobalSection
+EndGlobal

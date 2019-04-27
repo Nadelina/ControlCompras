@@ -1,0 +1,72 @@
+﻿@model ControlCompras.Models.IndexViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+@{
+    if (User.IsInRole("Administrador"))
+    {
+
+        <h2>Administracion</h2>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4 class="label-primary" style="color:white;">Productos</h4>
+                    <hr />
+                    @Html.Partial("../Components/_Productos", ViewData["Productos"])
+                </div>
+                <div class="col-lg-12">
+                    <h4 class="label-primary" style="color:white;">Categoria</h4>
+                    <hr />
+                    @Html.Partial("../Components/_Categoria", ViewData["Categoria"])
+                </div>
+                <div class="col-lg-12">
+                    <h4 class="label-primary" style="color:white;k;">Marca</h4>
+                    <hr />
+                    @Html.Partial("../Components/_Marca", ViewData["Marca"])
+                </div>
+                <div class="col-lg-12">
+                    <h4 class="label-primary" style="color:white;">Ubicaciones</h4>
+                    <hr />
+                    @Html.Partial("../Components/_Ubicaciones", ViewData["Ubicaciones"])
+                </div>
+                @*<div class="col-lg-12">
+                        <h4 style="border:dotted;border-bottom-color:black;">Proveedores</h4>
+                        <hr />
+                        @Html.Partial("../Components/_Proveedores", ViewData["Proveedores"])
+                    </div>*@
+                <div class="col-lg-12">
+                    <h4 class="label-primary" style="color:white;">Factura</h4>
+                    <hr />
+                    @Html.Partial("../Components/_Factura", ViewData["Factura"])
+                </div>
+            </div>
+        </div>
+    }
+    else if (User.IsInRole("Usuario"))
+    {
+        <div>
+            <h4>Cambia las configuraciones de tu usuario</h4>
+            <hr />
+            <dl class="dl-horizontal">
+                <dt>Contraseña:</dt>
+                <dd>
+                    [
+                    
+                        @Html.ActionLink("Cambiar contraseña", "ChangePassword")
+                        @Html.ActionLink("Crear", "SetPassword")
+                    
+                    ]
+                </dd>
+                
+            </dl>
+        </div>
+    }
+    else
+    {
+
+    }
+
+}
+
